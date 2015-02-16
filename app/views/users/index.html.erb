@@ -2,7 +2,7 @@
 
 
 <% @users.each do |user| %>
-<%= user.first_name %> <%= user.last_name %> - <%= user.email %> - <%=user.river %>
+<%= user.first_name %> <%= user.last_name %> - <%= user.email %> - <%=user.river %> - <%= user.date %>
 <hr>
 <%= link_to "view user", user_path(user) %>
 <%= link_to "delete user", user_path(user), method: "delete" %>
