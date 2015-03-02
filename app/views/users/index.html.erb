@@ -2,8 +2,8 @@
 
 
 <% @users.each do |user| %>
-<%= user.first_name %> <%= user.last_name %> - <%= user.email %> - <%=user.river %> - <%= user.date %>
+<%= user.first_name %> <%= user.last_name %> - <%= user.email %> 
 <hr>
 <%= link_to "view user", user_path(user) %>
-<%= link_to "delete user", user_path(user), method: "delete" %>
+<%= link_to "delete", user_path(user), method: "delete" %>
 <% end %>
